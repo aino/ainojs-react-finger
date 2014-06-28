@@ -1,0 +1,23 @@
+{
+  "name": "ainojs-react-finger",
+  "version": "1.0.0",
+  "description": "React Component for ainojs-finger",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/aino/ainojs-react-finger"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/aino/ainojs-react-finger/issues"
+  },
+  "homepage": "https://github.com/aino/ainojs-react-finger",
+  "main": "react-finger.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Aino",
+  "devDependencies": {},
+  "dependencies": {
+    "ainojs-finger": "latest"
+  }
+}
