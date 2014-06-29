@@ -2,6 +2,7 @@
 
 var Finger = require('ainojs-finger')
 var React = require('react')
+
 var getWidth = function(elem) {
 
   var w = Math.ceil( ("getBoundingClientRect" in elem) ?
@@ -23,7 +24,7 @@ module.exports = React.createClass({
     return {
       change: noop,
       complete: noop,
-      barn: this.props.children
+      instance: null
     }
   },
   getInitialState: function() {
@@ -36,9 +37,11 @@ module.exports = React.createClass({
     this.setChildrenCSS(function(elem, i) {
       return { position: 'absolute', height: '100%' }
     })
-    Finger(container,{
-      onchange: this.props.change,
-      oncomplete: this.props.complete
+    this.setProps({
+      instance: Finger(container,{
+        onchange: this.props.change,
+        oncomplete: this.props.complete
+      })
     })
   },
   componentWillUnmount: function() {
