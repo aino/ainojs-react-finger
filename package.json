@@ -16,7 +16,10 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Aino",
-  "devDependencies": {},
+  "devDependencies": {
+    "envify": "^1.2.1",
+    "react": "latest"
+  },
   "dependencies": {
     "ainojs-finger": "latest"
   }
