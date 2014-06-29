@@ -65,7 +65,7 @@ module.exports = React.createClass({
   },
   render: function() {
     var w = this.state.width
-    return (
+    return this.transferPropsTo(
       <div className="finger" style={{ position:'relative', width:'100%', height:'100%', overflow:'hidden' }}>
         <div ref="item" className="finger-items" style={{ width: this.props.children.length*w, height: '100%' }}>
           {this.props.children}
