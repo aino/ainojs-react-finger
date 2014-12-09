@@ -8,7 +8,7 @@ Usage:
 
     var FingerComponent = require('ainojs-react-finger')
 
-    <FingerComponent change={this.onchange} complete={this.oncomplete}>
+    <FingerComponent instance={this.props.finger}>
       <div className="item" />
       <div className="item" />
       <div className="item" />
